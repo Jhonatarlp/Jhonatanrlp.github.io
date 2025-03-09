@@ -14,9 +14,11 @@
         </a>
         <h2>Verifique Aqui</h2>
     </nav>
-    <label for="user-input">Insira o URL aqui:</label>
-    <input type="text" id="user-input">
-    <button>Cheque de novo</button>
+    <form action="verificador_links2.html" method="GET">
+        <label for="user-input">Insira o URL aqui:</label>
+        <input type="text" id="user-input" name="url" required>
+        <button type="submit">Checar</button>
+    </form>
     <article>
         <h2>Detalhes do site</h2>
         <ul>
@@ -32,11 +34,10 @@
             <li>
                 <p>Denúncias:     </p>
             </li>
-            <li>
-                <a href="verificador_links3.html">
-                    <button>Mais informações +</button>
-                </a>
-            </li>
+        </ul>
+        <form action="verificador_links3.html" method="GET">
+            <button type="submit">Mais informações +</button>
+        </form>
     </article>
 
 
@@ -47,7 +48,5 @@
     <a href="../chatbot.html"> <img src="../image/robo.png" alt="chatbot"></a>
     <a href="../lojas.html"> <img src="../image/bolsa-de-compras.png" alt="loja"></a>
 </footer>
-    </div>
-</div>
 </body>
 </html>
