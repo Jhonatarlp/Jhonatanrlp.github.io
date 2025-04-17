@@ -7,6 +7,10 @@ header, main, footer{
    width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 header{
     height: 3rem;
     width: 100%;
@@ -20,13 +24,23 @@ header{
     color: black; 
 }
 
+main{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .perfil{
-    width: 45%;
+    width: 25%;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    text-align: center;   
+    font-family: "Poppins", sans-serif;
 }
 
 .perfil img{
@@ -43,3 +57,66 @@ header{
     color: black; 
 }
 
+.lojas {
+    width: 35%;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: "Poppins", sans-serif;
+}
+
+.lojas img{
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: .5rem;
+}
+
+.lojas ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.lojas ul li{
+    border: solid .05px black;
+    border-radius: 50%;
+    margin: 1rem;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem; 
+}
+
+.btn{
+    width: 12rem;
+    height: 2rem;
+    background-color: #368abf;
+    border-radius: 10px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin: 2rem;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 3rem;
+    width: 100%;
+    background-color: #368abf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: black;
+
+}
+
+footer img{
+    width: 2rem;
+    height: 2rem;
+}
