@@ -4,36 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verifique Aqui</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/lojas.css">
 </head>
+
 <body>
-    <nav> <!-- Parte superior: indica o nome do app e a seta para voltar para a página anterior-->
-        <a href="../index.html"> <!--volta para a pagina inicial (verificar o index.html)-->
+    <header> 
+        <a href="../index.html"> 
             <img src = "../image/seta-esquerda.png" alt = "seta esquerda">
-            <p>Voltar</p>
         </a>
         <h2>Verifique Aqui</h2>
-    </nav>
+    </header >
     <main>
-        <h2>Lojas da Semana</h2>
-            <ul>
-                <li><a href = "https://www.amazon.com.br" target="_blank">
-                    <img src="../image/amazon-logo.png" alt = "Amazon">
-                    <p>Amazon</p>                   
+        <h2>Loja da Semana</h2>
+            <article class = "loja_semana"> 
+                <a href = "https://www.amazon.com.br" target="_blank">
+                    <img src="../image/amazon-logo.png" alt = "Amazon">                  
+                </a>
+            </article>
+
+        <article class="corpo">
+            <div class="bloco">
+                <h1>Comentários</h1>
+                <ul class="reclame">
+                
+                <li>
+                    <p>Carlos</p>
+                    <p class="comentario"> "Que site incrível!"</p>
+                    <a img src="../image/pessoa.jpg" alt="estrela"></a>
+                </li> 
+
+                <li>
+                    <p>Fernanda</p>
+                    <p class="comentario"> "Amei a usabilidade do site da Amazon!"</p>
+                    <a img src="../image/pessoa.jpg" alt="estrela"></a>
+                </li> 
+
+                <li>
+                    <p>Fernanda</p>
+                    <p class="comentario"> "Comprei e chegou em três dias."</p>
+                    <a img src="../image/pessoa.jpg" alt="estrela"></a>
+                </li> 
+
+                <li class="nota">
+                    <p>Nota</p>
+                    <p class="estrela">⭐⭐⭐</p>
+                </li>
+                </ul>
+            </div>
+
+            <div class="bloco">
+                <h2>Verificações</h2>
+                <ul class="verifique">
+                
+                <li>
+                    <a class = "positivo">
+                    <p>Comentários positivos:</p>
+                    <p class="num"> 90</p>
                     </a>
                 </li>
-
-                <li><a href = "https://www.olx.com.br" target="_blank">
-                    <img src="../image/olx-logo.png" alt = "Olx">
-                    <p>Olx</p>                   
+                <li>
+                    <a class = "negativo">
+                    <p>Comentários negativos:</p>
+                    <p class="num"> 24</p>
                     </a>
                 </li>
-
-                <li><a href = "https://www.mercadolivre.com.br" target="_blank">
-                    <img src="../image/mercado-livre.png" alt = "Mercado Livre">
-                    <p>Mercado Livre</p>          s         
+                <li>
+                    <a class = "compra">
+                    <p>Não recebeu a compra:</p>
+                    <p class="num"> 2</p>
                     </a>
                 </li>
             </ul>
+            </div>
+        </article>
+            
     </main>
     <footer> <!-- Rótulo final da página, como um sub menu-->
         <a href="../chamadas/verificador_chamadas_3.html"> <img src="../image/telefone.png" alt="telefone"></a>
