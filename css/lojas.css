@@ -109,6 +109,51 @@ main h2 {
     border-radius: 16px;
 }
 
+.nota {
+    display: flex;
+    align-self: flex-start; 
+    align-items: center;     
+    gap: 0.5rem;             
+}
+
+.comentario{
+    margin-top: .3rem;
+}
+
+.num{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 0.01rem white;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-top: .3rem;
+}
+
+.positivo .num{
+    background-color: #51A614;
+    color: white;
+}
+
+.negativo .num{
+    background-color: #b4280c;
+    color: white;
+}
+
+.compra .num{
+    background-color: #368abf;
+    color: white;
+}
+
+.verifique li a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
 footer {
     position: absolute;
     bottom: 0;
