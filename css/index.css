@@ -33,7 +33,7 @@ main{
 }
 
 .perfil{
-    width: 25%;
+    width: 35%;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
@@ -41,6 +41,10 @@ main{
     flex-wrap: wrap;
     text-align: center;   
     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold; 
+    font-size: 1.2rem;
+    color: black;
 }
 
 .perfil img{
@@ -67,7 +71,26 @@ main{
     font-family: "Poppins", sans-serif;
 }
 
-.lojas img{
+.amazon img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.olx img{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.cea img{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -103,6 +126,12 @@ main{
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     margin: 2rem;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #368abf;
+    transform: scale(1.02);
 }
 
 footer {
