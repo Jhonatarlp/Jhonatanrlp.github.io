@@ -126,6 +126,12 @@ main{
     font-weight: bold;
     font-family: "Poppins", sans-serif;
     margin: 2rem;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #368abf;
+    transform: scale(1.02);
 }
 
 footer {
