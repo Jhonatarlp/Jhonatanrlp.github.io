@@ -4,36 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chatbot Simples</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/chatbot.css">
 </head>
 <body>
-    <nav> <!-- Parte superior: indica o nome do app e a seta para voltar para a página anterior-->
-        <a href="../index.html"> <!--volta para a pagina inicial (verificar o index.html)-->
+    <header> 
+        <a href="../index.html"> 
             <img src = "../image/seta-esquerda.png" alt = "seta esquerda">
-            <p>Voltar</p>
         </a>
-        <h1>Verifique Aqui!</h1>
-    </nav>
+        <h2>Verifique Aqui</h2>
+    </header >
     <main>
-        <article>
-            <h2>Chatbot</h2>
-        </article>
-        <article>
-            <h2>Verificar foto</h2>
-            <button><img src="../image/camera.png" alt = "verificar foto"></button>
-        </article>
-        <article>
-            <h2>Checar mensagens</h2>
-            <button><img src="../image/mensagens.png" alt = "checar mensagens"></button>
-        </article>
-        <article>
-            <h2>Mecanismos de proteção</h2>
-            <button><img src="../image/cadeado.png" alt = "mecanismos de proteção"></button>
-
-        </article>
+        <p class="chat-bubble">Olá, Maria!</div>
+        <p class="chat-bubble">Como podemos te ajudar hoje?</div>
+        
+        <div class="options">
+            <a href="../index.html" class="escolha">
+                <img src="../image/camera.png" alt = "verificar foto">
+                <h2>Verificar foto</h2>
+            </a>
+            <article class="escolha">
+                <img src="../image/mensagens.png" alt = "checar mensagens">
+                <h2>Checar mensagens</h2>
+            </article>
+            <article class="escolha">
+                <img src="../image/cadeado.png" alt = "mecanismos de proteção">
+                <h2>Mecanismos de proteção</h2>
+            </article>
+        </div>
     </main>    
-    <label for="user-input">Digite sua duvida:</label>
-    <input type="text" id="user-input">
-    <button>Enviar</button>
+    <div class="chat">
+        <input type="text" placeholder="Digite aqui...">
+        <button>Enviar</button>
+    </div>
 
     <footer> <!-- Rótulo final da página, como um sub menu-->
         <a href="../chamadas/verificador_chamadas_3.html"> <img src="../image/telefone.png" alt="telefone"></a>

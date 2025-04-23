@@ -1,0 +1,128 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+header, main, footer{
+   width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    height: 3rem;
+    width: 100%;
+    background-color:  #368abf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: black; 
+}
+
+header img{
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.chat-bubble {
+    background-color: #E6F0FF;
+    padding: 10px 14px;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    width: fit-content;
+    max-width: 85%;
+    font-size: 14px;
+}
+
+.options {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.escolha {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #D6EFFF;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+}
+  
+.escolha img {
+    width: 20px;
+    height: 20px;
+}
+
+.chat {
+    position: fixed;
+    bottom: 3rem; /* altura do footer */
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    box-sizing: border-box; /* ✅ garante que padding entre no cálculo de largura */
+    gap: 8px; 
+}
+
+.chat input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #eee;
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+  
+  .chat button {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    background-color: #368abf;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 3rem;
+    width: 100%;
+    background-color: #368abf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    color: black;
+
+}
+
+footer img{
+    width: 2rem;
+    height: 2rem;
+}
