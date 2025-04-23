@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verifique Aqui</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/links.css"> 
 </head>
 
 <body>
-    <nav>
+    <header>
         <a href="../index.html">
             <img src = "../image/seta-esquerda.png" alt = "seta esquerda">
-            <p>Voltar</p>
         </a>
         <h2>Verifique Aqui</h2>
-    </nav>
-    <form action="verificador_links2.html" method="GET">
-        <label for="user-input">Insira o URL aqui:</label>
-        <input type="text" id="user-input" name="url" required>
-        <button type="submit">Checar</button>
-    </form>
-    <p>Verificamos a confiabilidade do site e suas experiências com os clientes!</p>
+    </header>
+    <main> 
+        <h2>Verificador de links!</h2>
+        <p class = 'subtitle'>Coloque no espaço o link do site suspeito:</p>
+    
+        <form action="verificador_links2.html" method="GET">
+            <div class="input-group">
+                <input type="text" placeholder="Link.com.br" id="user-input" name="url" required>
+                <button>&#10148;</button>
+            </div>
+        </form>
+        <div class="info-box">
+            Verificamos a confiabilidade do site e suas experiências com os clientes.
+        </div>
+    </main>
 
 <footer>
     <a href="../verificador_chamadas.html"> <img src="../image/telefone.png" alt="telefone"></a>
