@@ -33,7 +33,7 @@ main{
 }
 
 .perfil{
-    width: 25%;
+    width: 35%;
     margin-top: 1rem;
     display: flex;
     justify-content: center;
@@ -41,6 +41,10 @@ main{
     flex-wrap: wrap;
     text-align: center;   
     font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold; 
+    font-size: 1.2rem;
+    color: black;
 }
 
 .perfil img{
@@ -50,7 +54,7 @@ main{
     border-radius: 16px;
 }
 
-.pefil h1{
+.pefil h2{
     font-size: 2rem;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
@@ -67,7 +71,26 @@ main{
     font-family: "Poppins", sans-serif;
 }
 
-.lojas img{
+.amazon img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.olx img{
+    width: 2rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+.cea img{
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
@@ -95,14 +118,23 @@ main{
     height: 4rem; 
 }
 
-.btn{
-    width: 12rem;
-    height: 2rem;
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
     background-color: #368abf;
-    border-radius: 10px;
-    font-weight: bold;
+    color: black;
+    border: none;
+    border-radius: 6px;
     font-family: "Poppins", sans-serif;
-    margin: 2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #368abf;
+    transform: scale(1.02);
 }
 
 footer {
