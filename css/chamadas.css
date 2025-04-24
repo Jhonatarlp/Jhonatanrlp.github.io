@@ -359,9 +359,9 @@ main {
 .confirmacao {
     background-color: rgba(20, 174, 92);
     border-radius: 10px;
-    padding: 1.5rem;
+    padding: 0.7rem;
     margin: 1.5rem auto;
-    width: 90%;
+    width: 80%;
     max-width: 400px;
     text-align: center;
     color: #000;
