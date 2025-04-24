@@ -11,11 +11,13 @@
 <body>
     <header> 
         <a href="../index.html"> 
-            <img src = "../image/seta-esquerda.png" alt = "seta esquerda">
+            <img src="../image/seta-esquerda.png" alt="seta esquerda">
         </a>
         <h2>Verifique Aqui</h2>
-    </header >
+    </header>
+
     <article class="envio-numero">
+        <h2 class="esconder-info">Verificação de número</h2>
         <figure>
             <img src="../image/telefone.png" alt="telefone">
             <input type="number" id="digite-numero" name="numero" placeholder="DDD + Número" required>     
@@ -24,23 +26,25 @@
     
     <div class="container-detalhes">
         <section class="container-numero">
-            <article class="botoes-envio-numero">
-                <a href="verificador_chamada_2.html">
-                    <button class="btn">Informações</button>
+            <h2 class="esconder-info">Ações disponíveis</h2>
+            <div class="botoes-envio-numero">
+                <a href="verificador_chamada_2.html" class="btn">
+                    <span>Informações</span>
                     <img src="../image/simbolo-de-informacao.png" alt="informação">
                 </a>
-                <a href="verificador_chamadas.html">
-                    <button class="btn desativado">Bloquear</button>
+                <a href="verificador_chamadas.html" class="btn desativado">
+                    <span>Bloquear</span>
                     <img src="../image/cadeado.png" alt="cadeado">
                 </a>
-                <a href="verificador_chamadas.html">
-                    <button class="btn desativado">Contatos</button>
+                <a href="verificador_chamadas.html" class="btn desativado">
+                    <span>Contatos</span>
                     <img src="../image/pessoa.jpg" alt="pessoa">
                 </a>
-            </article>
+            </div>
         </section>
     
         <article class="detalhes">
+            <h2>Detalhes do Número</h2>
             <ul>
                 <li><p><strong>Estado:</strong> GO</p></li>
                 <li><p><strong>Contato:</strong> Não</p></li>
@@ -48,17 +52,18 @@
                 <li><p><strong>Empresa:</strong> Nome</p></li>
             </ul>
         </article>
-        <a href="verificador_chamadas_3.html" class="botao-centralizado">
-            <button class="btn-acao">Bloquear</button>
-        </a>
+        
+        <div class="botao-centralizado">
+            <a href="verificador_chamadas_3.html" class="btn-acao">Bloquear</a>
+        </div>
     </div>
     
-    <footer> <!-- Rótulo final da página, como um sub menu-->
-        <a href="../chamadas/verificador_chamadas.html"> <img src="../image/telefone.png" alt="telefone"></a>
-        <a href="../link/verificador.html"> <img src="../image/lupa.png" alt="verificador de link"></a>
-        <a href="../index.html"> <img src="../image/casa.png" alt="home"></a>
-        <a href="../chatbot/chatbot.html"> <img src="../image/robo.png" alt="chatbot"></a>
-        <a href="../lojas/lojas.html"> <img src="../image/bolsa-de-compras.png" alt="loja"></a>
+    <footer>
+        <a href="../chamadas/verificador_chamadas.html"><img src="../image/telefone.png" alt="telefone"></a>
+        <a href="../link/verificador.html"><img src="../image/lupa.png" alt="verificador de link"></a>
+        <a href="../index.html"><img src="../image/casa.png" alt="home"></a>
+        <a href="../chatbot/chatbot.html"><img src="../image/robo.png" alt="chatbot"></a>
+        <a href="../lojas/lojas.html"><img src="../image/bolsa-de-compras.png" alt="loja"></a>
     </footer>
 </body>
 </html>
