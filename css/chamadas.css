@@ -1,0 +1,376 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+}
+
+header, main, footer {
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    height: 3rem;
+    background-color: #368abf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    position: relative;
+}
+
+header img {
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3.5rem;
+    min-height: calc(100vh - 6rem);
+}
+
+.envio-numero {
+    margin: 1.5rem auto; 
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.envio-numero ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.5rem 0;
+    background-color: rgba(54, 138, 191, 0.63);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+
+.envio-numero li {
+    margin: 0;
+    padding: 0;
+}
+
+.envio-numero h2, 
+.envio-numero h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0;
+    color: #000;
+    line-height: 1.4;
+}
+
+.envio-numero h2 {
+    margin-bottom: 0.5rem;
+}
+
+.envio-numero figure {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    margin: 0;
+    padding: 0;
+}
+
+.envio-numero input {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 12px;
+    font-size: 1rem;
+}
+
+.envio-numero img {
+    width: 30px;
+    height: 30px;
+}
+
+.botoes-envio-numero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+    width: 90%;
+}
+
+.botoes-envio-numero a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 10rem;
+    border: 2px solid #368ABF;
+    border-radius: 10px;
+    padding: 0.8rem 1.5rem;
+    background-color: transparent;
+    color: #000;
+    text-decoration: none;
+}
+
+.botoes-envio-numero a:hover {
+    background-color: rgba(54, 138, 191, 0.1);
+}
+
+.botoes-envio-numero .btn {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.botoes-envio-numero img {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+.info_especifica {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    min-width: 200px;
+    border: 2px solid #368ABF;
+    border-radius: 10px;
+    padding: 0.6rem 1.2rem;
+    background-color: rgba(54, 138, 191, 0.63);
+    color: #000;
+    text-decoration: none;
+    margin: 1rem 0 2rem 1rem;
+    font-size: 0.9rem;
+}
+
+.info_especifica:hover {
+    background-color: rgba(54, 138, 191, 0.1);
+}
+
+.info_especifica .btn {
+    background: none;
+    border: none;
+    font-size: inherit;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.info_especifica img {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+}
+
+.topo-pagina {
+    height: 3rem;
+    background-color: #368abf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+.topo-pagina img {
+    position: absolute;
+    left: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.numero-detalhe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 1rem 0;
+}
+
+.icone-telefone {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.numero-consultado {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.detalhes-numero {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto 2rem auto;
+    background-color: rgba(54, 138, 191, 0.1);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.detalhes-numero h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.detalhes-numero ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detalhes-numero li {
+    margin-bottom: 0.75rem;
+    font-size: 1rem;
+}
+
+.botao-bloquear {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    border: 2px solid #368ABF;
+    border-radius: 8px;
+    background-color: rgba(54, 138, 191, 0.63);
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+}
+
+.botao-bloquear img {
+    width: 20px;
+    height: 20px;
+}
+
+.botao-bloquear:hover {
+    background-color: rgba(54, 138, 191, 0.1);
+}
+
+.botoes-atalhos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.botoes-atalhos a img {
+    width: 30px;
+    height: 30px;
+}
+
+.container-numero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.botoes-envio-numero {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.botoes-envio-numero a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+
+.btn {
+    background-color: #d9ecf8;
+    color: #000;
+    border: 1.5px solid #0077cc;
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn.desativado {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.detalhes {
+    border: 1.5px solid #0077cc;
+    border-radius: 10px;
+    padding: 16px;
+    width: 60%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.detalhes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detalhes li {
+    margin-bottom: 8px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-bloquear {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    justify-content: flex-end;
+}
+
+.botao-bloquear button {
+    background-color: #368ABF;
+    border: 1px solid #368ABF;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 3rem;
+    width: 100%;
+    background-color: #368abf;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+
+footer img {
+    width: 2rem;
+    height: 2rem;
+}

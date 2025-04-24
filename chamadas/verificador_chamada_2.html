@@ -4,59 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verifique Aqui!</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/chamadas.css">
 </head>
 
 <body>
-    <nav>
-        <a href="../index.html">
-            <img src="../image/seta-esquerda.png" alt="seta-esquerda">
+    <header> 
+        <a href="../index.html"> 
+            <img src = "../image/seta-esquerda.png" alt = "seta esquerda">
         </a>
-        <h1>Verifique Aqui!</h1>
-    </nav>
-    <img src="../image/telefone.png" alt="telefone">
-    <h2>(99) 99999-9999</h2>
-    <article>
-        <h2>Detalhes do Número</h2>
-        <ul>
-            <li>
-                <p>Estado:      </p>
-            </li>
-            <li>
-                <p>Contato:     </p>
-            </li>
-            <li>
-                <p>Ligações:    </p>
-            </li>
-            <li>
-                <p>Empresa:     </p>
-            </li>
-            <li>
-                <a href="verificador_chamadas_3.html">
-                    <img src="../image/cadeado.png" alt="Cadeado" width="20" height="20">
-                    Bloquear
-                </a>
-            </li>
-        </ul>
+        <h2>Verifique Aqui</h2>
+    </header >
+    <article class="envio-numero">
+        <figure>
+            <img src="../image/telefone.png" alt="telefone">
+            <input type="number" id="digite-numero" name="numero" placeholder="DDD + Número" required>     
+        </figure>
     </article>
+
+    <section class="container-numero">
+        <article class="botoes-envio-numero">
+            <a href="verificador_chamada_2.html">
+                <button class="btn">Informações</button>
+                <img src="../image/simbolo-de-informacao.png" alt="informação">
+            </a>
+            <a href="verificador_chamadas.html">
+                <button class="btn desativado">Bloquear</button>
+                <img src="../image/cadeado.png" alt="cadeado">
+            </a>
+            <a href="verificador_chamadas.html">
+                <button class="btn desativado">Contatos</button>
+                <img src="../image/pessoa.jpg" alt="pessoa">
+            </a>
+        </article>
     
-    <main>
-        <a href="verificador_chamadas.html">
-            <img src="../image/simbolo-de-informacao.png" alt="">
-        </a>
-        <a href="#"> 
-            <img src="../image/cadeado.png" alt="cadeado">
-        </a>
-        <a href="">
-            <img src="../image/pessoa.png" alt="simbolo-pessoinha">
-        </a>
-    </main>
+        <article class="detalhes">
+            <ul>
+                <li><p><strong>Estado:</strong> GO</p></li>
+                <li><p><strong>Contato:</strong> Não</p></li>
+                <li><p><strong>Ligações:</strong> 10</p></li>
+                <li><p><strong>Empresa:</strong> Nome</p></li>
+                <li>
+                    <a href="verificador_chamadas_3.html" class="botao-bloquear">
+                        <button>Bloquear</button>
+                        <img src="../image/cadeado.png" alt="Cadeado" width="16">
+                    </a>
+                </li>
+            </ul>
+        </article>
+    </section>
     
     <footer>
-        <a href="../chamadas/verificador_chamadas.html"> <img src="../image/telefone.png" alt="telefone"></a>
-        <a href="../link/verificador.html"> <img src="../image/lupa.png" alt="verificador de link"></a>
-        <a href="../index.html"> <img src="../image/casa.png" alt="home"></a>
-        <a href="../chatbot/chatbot.html"> <img src="../image/robo.png" alt="chatbot"></a>
-        <a href="../lojas/lojas.html"> <img src="../image/bolsa-de-compras.png" alt="loja"></a>
+        <a href="chamadas/verificador_chamadas_3.html"> <img src="../image/telefone.png" alt="telefone"></a>
+        <a href="verificador/verificador.html"> <img src="../image/lupa.png" alt="verificador de link"></a>
+        <a href="index.html"> <img src="../image/casa.png" alt="home"></a>
+        <a href="chatbot/chatbot.html"> <img src="../image/robo.png" alt="chatbot"></a>
+        <a href="lojas/lojas.html"> <img src="../image/bolsa-de-compras.png" alt="loja"></a>
     </footer>
 </body>
 </html>

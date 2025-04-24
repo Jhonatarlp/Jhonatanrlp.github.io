@@ -3,55 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verifique Aqui!</title>
+    <title>Verificador de chamadas</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/chamadas.css">
 </head>
+
 <body>
-    <nav>
-        <a href="../index.html">
-            <img src="../image/seta-esquerda.png" alt="seta-esquerda">
+    <header> 
+        <a href="../index.html"> 
+            <img src = "../image/seta-esquerda.png" alt = "seta esquerda">
         </a>
-        <h1>Verifique Aqui!</h1>
-    </nav>
+        <h2>Verifique Aqui</h2>
+    </header >
+
     <main>
-        <article>
-            <h1>Está recebendo várias ligações? Digite o número!</h1>
-            <img src="../image/telefone.png" alt="telefone">
-            <input type="number">
+        <article class="envio-numero">
+            <ul>
+                <li>
+                                <h2>Está recebendo várias ligações?</h2>
+            <h3>Digite o número:</h3>
+                </li>
+            </ul>
+
+            <figure>
+                <img src="../image/telefone.png" alt="telefone">
+                <input type="number" id="digite-numero" name="numero" placeholder="DDD + Número" required>     
+            </figure>
         </article>
-        <article>
-            <h2>Informações Adicionais</h2>
+
+        <article class="botoes-envio-numero">
             <a href="verificador_chamada_2.html">
-                Informações 
-                <img src="../image/simbolo-de-informacao.png" alt="Símbolo de informações">
+                <button class="btn">Informações</button>
+                <img src="../image/simbolo-de-informacao.png" alt="simbolo-de-informacao">
             </a>
-            <ul>
-                <li>Verifique mais Informações</li>
-            </ul>
+            <a href="verificador_chamadas.html">
+                <button class="btn">Bloquear</button>
+                <img src="../image/cadeado.png" alt="cadeado">
+            </a>
+            <a href="verificador_chamadas.html">
+                <button class="btn">Contatos</button>
+                <img src="../image/pessoa.jpg" alt="simbolo-pessoinha">
+            </a>
         </article>
-        
-        <article>
-            <h2>Bloquear Números</h2>
-            <button>Bloquear <img src="../image/cadeado.png" alt="simbolo-cadeado"></button>
-            <ul>
-                <li>Números bloqueados</li>
-            </ul>
-        </article>
-            
-        <article>
-            <h2>Contatos</h2>
-            <button>Contatos <img src="../image/pessoa.png" alt="simbolo-pessoinha"></button>
-            <ul>
-                <li>Comparar com contatos salvos</li>
-            </ul>
-        </article>
+    
+        <a class="info_especifica" g="verificador_chamada_2.html">
+            <button class="btn">Informações específicas</button>
+            <img src="../image/lupa.png" alt="lupa">
+        </a>
     </main>
 
     <footer>
-        <a href="../chamadas/verificador_chamadas.html"> <img src="../image/telefone.png" alt="telefone"></a>
-        <a href="../link/verificador.html"> <img src="../image/lupa.png" alt="verificador de link"></a>
-        <a href="../index.html"> <img src="../image/casa.png" alt="home"></a>
-        <a href="../chatbot/chatbot.html"> <img src="../image/robo.png" alt="chatbot"></a>
-        <a href="../lojas/lojas.html"> <img src="../image/bolsa-de-compras.png" alt="loja"></a>
+        <a href="chamadas/verificador_chamadas_3.html"> <img src="../image/telefone.png" alt="telefone"></a>
+        <a href="verificador/verificador.html"> <img src="../image/lupa.png" alt="verificador de link"></a>
+        <a href="index.html"> <img src="../image/casa.png" alt="home"></a>
+        <a href="chatbot/chatbot.html"> <img src="../image/robo.png" alt="chatbot"></a>
+        <a href="lojas/lojas.html"> <img src="../image/bolsa-de-compras.png" alt="loja"></a>
     </footer>
 </body>
 </html>
