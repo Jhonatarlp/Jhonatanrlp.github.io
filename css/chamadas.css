@@ -278,6 +278,15 @@ main {
     height: 30px;
 }
 
+.container-detalhes {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
 .container-numero {
     display: flex;
     justify-content: space-between;
@@ -317,10 +326,12 @@ main {
 }
 
 .detalhes {
+    margin: 0 auto;
     border: 1.5px solid #0077cc;
     border-radius: 10px;
     padding: 16px;
     width: 60%;
+    height: 5rem;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
@@ -338,20 +349,20 @@ main {
     justify-content: space-between;
 }
 
-.botao-bloquear {
+.botao-centralizado {
+    margin-top: .05rem; 
     display: flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 10px;
-    justify-content: flex-end;
+    justify-content: center; 
+    width: 100%;
 }
 
-.botao-bloquear button {
+.btn-acao {
     background-color: #368ABF;
+    color: black;
     border: 1px solid #368ABF;
     border-radius: 6px;
-    padding: 4px 10px;
-    font-size: 13px;
+    padding: 8px 16px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
 }
