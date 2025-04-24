@@ -367,6 +367,36 @@ main {
     cursor: pointer;
 }
 
+.confirmacao {
+    background-color: rgba(20, 174, 92);
+    border-radius: 10px;
+    padding: 0.7rem;
+    margin: 1.5rem auto;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    color: #000;
+}
+
+.confirmacao h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.confirmacao h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.confirmacao h4 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #2a6a9a;
+    margin-top: 0.5rem;
+}
+
 footer {
     position: fixed;
     bottom: 0;
