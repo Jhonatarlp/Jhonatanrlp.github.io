@@ -50,14 +50,14 @@ main h2 {
     font-family: "Poppins", sans-serif;
 }
 
-.loja_semana {
+.lojasemana {
     display: flex;
     justify-content: space-between;
     margin-bottom: 1rem;    
 }
 
 
-.loja_semana img{
+.lojasemana img{
     width: 5rem;
     height: 5rem;
     border-radius: 50%;
@@ -103,11 +103,47 @@ main h2 {
     padding: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start; 
     gap: 1rem;
     list-style: none;
     border-radius: 16px;
 }
+
+.reclame li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+}
+
+.reclame li p:first-of-type {
+    display: flex;
+    align-items: center;
+}
+
+.reclame li img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.nome-com-foto {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nome-com-foto img {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+}
+
+.nome-com-foto p {
+    margin: 0;
+    font-weight: bold;
+}
+
 
 .nota {
     display: flex;

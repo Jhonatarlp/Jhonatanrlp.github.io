@@ -54,7 +54,7 @@ main{
     border-radius: 16px;
 }
 
-.pefil h1{
+.pefil h2{
     font-size: 2rem;
     font-weight: bold;
     font-family: "Poppins", sans-serif;
@@ -118,15 +118,18 @@ main{
     height: 4rem; 
 }
 
-.btn{
-    width: 12rem;
-    height: 2rem;
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
     background-color: #368abf;
-    border-radius: 10px;
-    font-weight: bold;
-    font-family: "Poppins", sans-serif;
-    margin: 2rem;
+    color: black;
     border: none;
+    border-radius: 6px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .btn:hover {
