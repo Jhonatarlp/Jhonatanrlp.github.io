@@ -82,7 +82,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 0.8rem;
-    margin: 3rem    ;
+    margin: 0.5rem auto 1rem auto;
     padding: 0;
 }
 
@@ -293,11 +293,12 @@ main {
     border: 1.5px solid #0077cc;
     border-radius: 10px;
     padding: 16px;
-    width: 60%;
-    height: 5rem;
+    width: 70%; 
+    min-height: 5rem;  
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
+
 
 .detalhes ul {
     list-style: none;
