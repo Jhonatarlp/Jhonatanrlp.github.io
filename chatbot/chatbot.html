@@ -6,6 +6,7 @@
     <title>Chatbot</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/chatbot.css">
+    <script src="../js/script_chatbot.js"></script>
 </head>
 <body>
     <header> 
@@ -19,7 +20,7 @@
         <p class="chat-bubble">Como podemos te ajudar hoje?</p>
         
         <div class="options">
-            <a href="" class="escolha">
+            <a href="" class="escolha" id="desabilitado">
                 <img src="../image/camera.png" alt = "verificar foto">
                 <h2>Verificar foto</h2>
             </a>
@@ -27,15 +28,14 @@
                 <img src="../image/mensagens.png" alt = "checar mensagens">
                 <h2>Checar mensagens</h2>
             </a>
-            <a href="" class="escolha">
+            <a href="" class="escolha" id="desabilitado">
                 <img src="../image/cadeado.png" alt = "mecanismos de proteção">
                 <h2>Mecanismos de proteção</h2>
             </a>
         </div>
 
-
     </main>    
-    <div class="chat">
+    <div class="chat" id="desabilitado">
         <input type="text" placeholder="Digite aqui...">
         <button>Enviar</button>
     </div>
