@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', function () {
     telefone.style.opacity = 0.3;
 
     if (numero) {
-        const info = pegarInfoDoNumero(numero);
+        let info = pegarInfoDoNumero(numero);
 
         document.querySelector('.detalhes').innerHTML = `
             <h2>Detalhes do Número</h2>
@@ -23,13 +23,18 @@ window.addEventListener('DOMContentLoaded', function () {
             </ul>
         `;
     }
+    let contatos = document.querySelector("#contatosss")
+    contatos.addEventListener('click', function() {
+        alert('Número salvo com sucesso')
+        console.log('oi')
+    });
 });
 
 function pegarInfoDoNumero(numero) {
-    const ddd = numero.slice(0, 2);
-    const restante = numero.slice(2);
+    let ddd = numero.slice(0, 2);
+    let restante = numero.slice(2);
 
-    const dddParaEstado = {
+    let dddParaEstado = {
         '11': 'SP', '12': 'SP', '13': 'SP', '14': 'SP', '15': 'SP', '16': 'SP', '17': 'SP', '18': 'SP', '19': 'SP',
         '21': 'RJ', '22': 'RJ', '24': 'RJ',
         '27': 'ES', '28': 'ES',
@@ -60,15 +65,15 @@ function pegarInfoDoNumero(numero) {
     };
 
 
-    const estado = dddParaEstado[ddd] || 'Desconhecido';
+    let estado = dddParaEstado[ddd] || 'Desconhecido';
 
-    const tipo = (restante.length >= 8 && (restante.startsWith('9') || restante.length === 9))
+    let tipo = (restante.length >= 8 && (restante.startsWith('9') || restante.length === 9))
         ? 'Celular'
         : 'Fixo';
 
-    const empresa = Math.random() < 0.5 ? 'Sim' : 'Não';
+    let empresa = Math.random() < 0.5 ? 'Sim' : 'Não';
 
-    const ligacoes = Math.floor(Math.random() * 20) + 1;
+    let ligacoes = Math.floor(Math.random() * 20) + 1;
 
     return {
         estado,
