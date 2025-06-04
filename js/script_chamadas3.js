@@ -58,6 +58,6 @@ window.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('numero', numero);
         console.log('Número armazenado no localStorage:', numero);
 
-        window.location.href = "verificador_chamada_2.html";
+        window.location.href = "../chamadas/verificador_chamadas_2.html";
     }
 });
